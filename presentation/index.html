@@ -3944,6 +3944,115 @@
       font-weight: 600;
       font-style: italic;
     }
+
+    /* Live Interactive Deck Badges & PDF Links */
+    .live-deck-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(194, 226, 0, 0.12);
+      border: 1px solid rgba(194, 226, 0, 0.45);
+      color: #C2E200;
+      padding: 3.5px 11px;
+      border-radius: 100px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .live-deck-pill:hover {
+      background: #C2E200;
+      color: #020813;
+      border-color: #C2E200;
+      box-shadow: 0 0 12px rgba(194, 226, 0, 0.4);
+    }
+    .live-dot-pulse {
+      width: 6px;
+      height: 6px;
+      background: #C2E200;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #C2E200;
+      animation: pulse 1.8s infinite;
+    }
+
+    .hero-live-deck-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, rgba(6, 34, 56, 0.9) 0%, rgba(11, 57, 84, 0.9) 100%);
+      border: 1px solid rgba(0, 245, 212, 0.5);
+      border-radius: 8px;
+      padding: 4px 14px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 245, 212, 0.15);
+    }
+    .hero-live-deck-banner:hover {
+      border-color: #00F5D4;
+      box-shadow: 0 0 14px rgba(0, 245, 212, 0.35);
+      transform: translateY(-1px);
+    }
+    .hero-live-badge {
+      background: #00F5D4;
+      color: #020813;
+      font-size: 8.5px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+    .hero-live-text {
+      color: #F1F5F9;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .footer-live-deck-link {
+      color: #00F5D4;
+      text-decoration: none;
+      font-weight: 700;
+      margin-left: 6px;
+      transition: color 0.15s ease;
+    }
+    .footer-live-deck-link:hover {
+      color: #C2E200;
+      text-decoration: underline;
+    }
+
+    /* Print & PDF Export Engine */
+    @page {
+      size: 16in 9in;
+      margin: 0;
+    }
+    @media print {
+      html, body {
+        width: 16in !important;
+        height: 9in !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #020813 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        overflow: hidden !important;
+      }
+      .deck-nav-bar, .deck-controls-hint, .interactive-toggle-hint {
+        display: none !important;
+      }
+      .deck-container {
+        width: 16in !important;
+        height: 9in !important;
+        max-width: 16in !important;
+        max-height: 9in !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -3969,6 +4078,11 @@
           <span class="tag-dot"></span>
           <span>CSITM IIM Bangalore &bull; Follow The Money Challenge</span>
         </div>
+
+        <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="live-deck-pill">
+          <span class="live-dot-pulse"></span>
+          <span>View Live Animated Deck &rarr;</span>
+        </a>
       </div>
 
       <div class="slide-counter">
@@ -4155,7 +4269,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -4450,7 +4564,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -4922,7 +5036,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -5378,7 +5492,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -5755,7 +5869,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -6071,7 +6185,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -6436,7 +6550,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 
@@ -6661,7 +6775,7 @@
               <span class="team-pill-accent">Mayank Asnora</span>
             </div>
             <div class="team-meta">
-              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong></span>
+              <span>Team DXB &bull; Presented for <strong>Follow The Money: Innovation Challenge 2026</strong> <a href="https://mayankasnora.github.io/PayU-Sleeper-Syndicate-Detection/presentation/" target="_blank" class="footer-live-deck-link">&bull; 🔗 Live Deck Animations</a></span>
             </div>
           </div>
 

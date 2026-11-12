@@ -22,6 +22,7 @@
   <img src="https://img.shields.io/badge/Team-DXB-C2E200?style=for-the-badge&logoColor=black"/>
   <img src="https://img.shields.io/badge/Champion-LightGBM_+_Logistic-059669?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-Proprietary_Evaluation-EA580C?style=for-the-badge"/>
+  <a href="PayU_Sleeper_Syndicate_Detection_Team_DXB.pdf"><img src="https://img.shields.io/badge/Download-Submission_PDF-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
 </p>
 
 <br/>
