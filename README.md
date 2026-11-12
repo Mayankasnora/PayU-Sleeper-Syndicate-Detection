@@ -4,9 +4,9 @@
 
 ---
 
-### Author & Intellectual Property Notice
-* **Author:** Mayank Asnora
-* **Institution:** Masters' Union (Undergraduate — Data Science & AI, 2029)
+### Author & Competition Credentials
+* **Team Name:** DXB
+* **Author / Lead:** Mayank Asnora
 * **Email:** mayank.asnora_ugdsai2029@mastersunion.org
 * **License:** [Proprietary Evaluation & Research License](LICENSE) (Strictly evaluation-only. All commercial, deployment, and derivative rights reserved.)
 
@@ -81,3 +81,4 @@ A standalone, zero-dependency presentation deck is available in [`presentation/i
   note   = {Presented for CSITM IIM Bangalore × PayU Innovation Challenge 2026}
 }
 ```
+
