@@ -1,0 +1,244 @@
+<svg width="100%" viewBox="0 0 960 260" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Unmasking the Sleeper Syndicate — PayU Innovation Challenge 2026</title>
+<defs>
+  <style>
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes blipAlert {
+      0%, 100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.6); opacity: 1; }
+    }
+    @keyframes blipAlertRing {
+      0% { r: 4px; opacity: 1; }
+      100% { r: 24px; opacity: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 0.85; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    @keyframes dashStream {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes scanLight {
+      0% { transform: translateX(-100px); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateX(800px); opacity: 0; }
+    }
+
+    .radar-beam {
+      transform-origin: 120px 130px;
+      animation: radarSweep 4s linear infinite;
+    }
+    .blip-pulse {
+      transform-origin: 145px 105px;
+      animation: blipAlert 2s ease-in-out infinite;
+    }
+    .blip-ring {
+      animation: blipAlertRing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .status-dot {
+      animation: blink 1.8s ease-in-out infinite;
+    }
+    .laser-scan {
+      animation: scanLight 4.5s ease-in-out infinite;
+    }
+    .stream-line {
+      stroke-dasharray: 6 4;
+      animation: dashStream 1.5s linear infinite;
+    }
+    .glow-bg {
+      animation: pulseGlow 3.5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Gradients -->
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020813"/>
+    <stop offset="50%" stop-color="#07192F"/>
+    <stop offset="100%" stop-color="#030C1A"/>
+  </linearGradient>
+
+  <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF"/>
+    <stop offset="45%" stop-color="#E2F56F"/>
+    <stop offset="100%" stop-color="#00F5D4"/>
+  </linearGradient>
+
+  <linearGradient id="beamGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.55"/>
+    <stop offset="50%" stop-color="#C2E200" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#002B49" stop-opacity="0"/>
+  </linearGradient>
+
+  <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#062238"/>
+    <stop offset="100%" stop-color="#0B3954"/>
+  </linearGradient>
+
+  <linearGradient id="accentLineGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#C2E200" stop-opacity="0"/>
+    <stop offset="30%" stop-color="#C2E200" stop-opacity="0.8"/>
+    <stop offset="70%" stop-color="#00F5D4" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#00F5D4" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- Filters -->
+  <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="blipGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- Outer Container -->
+<rect width="960" height="260" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
+
+<!-- Cybersecurity Matrix Dots Grid -->
+<g opacity="0.08" fill="#00F5D4">
+  <circle cx="280" cy="30" r="1.5"/><circle cx="340" cy="30" r="1.5"/><circle cx="400" cy="30" r="1.5"/><circle cx="460" cy="30" r="1.5"/><circle cx="520" cy="30" r="1.5"/><circle cx="580" cy="30" r="1.5"/><circle cx="640" cy="30" r="1.5"/><circle cx="700" cy="30" r="1.5"/><circle cx="760" cy="30" r="1.5"/><circle cx="820" cy="30" r="1.5"/><circle cx="880" cy="30" r="1.5"/>
+  <circle cx="280" cy="65" r="1.5"/><circle cx="340" cy="65" r="1.5"/><circle cx="400" cy="65" r="1.5"/><circle cx="460" cy="65" r="1.5"/><circle cx="520" cy="65" r="1.5"/><circle cx="580" cy="65" r="1.5"/><circle cx="640" cy="65" r="1.5"/><circle cx="700" cy="65" r="1.5"/><circle cx="760" cy="65" r="1.5"/><circle cx="820" cy="65" r="1.5"/><circle cx="880" cy="65" r="1.5"/>
+  <circle cx="280" cy="100" r="1.5"/><circle cx="340" cy="100" r="1.5"/><circle cx="400" cy="100" r="1.5"/><circle cx="460" cy="100" r="1.5"/><circle cx="520" cy="100" r="1.5"/><circle cx="580" cy="100" r="1.5"/><circle cx="640" cy="100" r="1.5"/><circle cx="700" cy="100" r="1.5"/><circle cx="760" cy="100" r="1.5"/><circle cx="820" cy="100" r="1.5"/><circle cx="880" cy="100" r="1.5"/>
+  <circle cx="280" cy="135" r="1.5"/><circle cx="340" cy="135" r="1.5"/><circle cx="400" cy="135" r="1.5"/><circle cx="460" cy="135" r="1.5"/><circle cx="520" cy="135" r="1.5"/><circle cx="580" cy="135" r="1.5"/><circle cx="640" cy="135" r="1.5"/><circle cx="700" cy="135" r="1.5"/><circle cx="760" cy="135" r="1.5"/><circle cx="820" cy="135" r="1.5"/><circle cx="880" cy="135" r="1.5"/>
+  <circle cx="280" cy="170" r="1.5"/><circle cx="340" cy="170" r="1.5"/><circle cx="400" cy="170" r="1.5"/><circle cx="460" cy="170" r="1.5"/><circle cx="520" cy="170" r="1.5"/><circle cx="580" cy="170" r="1.5"/><circle cx="640" cy="170" r="1.5"/><circle cx="700" cy="170" r="1.5"/><circle cx="760" cy="170" r="1.5"/><circle cx="820" cy="170" r="1.5"/><circle cx="880" cy="170" r="1.5"/>
+</g>
+
+<!-- Ambient Glow Orbs -->
+<circle cx="120" cy="130" r="90" fill="#00F5D4" opacity="0.04" class="glow-bg"/>
+<circle cx="550" cy="110" r="140" fill="#C2E200" opacity="0.03" class="glow-bg"/>
+
+<!-- ======================================================== -->
+<!-- RADAR SCANNER ENGINE (LEFT VISUAL MOAT)                   -->
+<!-- ======================================================== -->
+<g transform="translate(0, 0)">
+  <!-- Outer concentric rings -->
+  <circle cx="120" cy="130" r="95" fill="none" stroke="#0E334D" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="120" cy="130" r="70" fill="none" stroke="#134567" stroke-width="1"/>
+  <circle cx="120" cy="130" r="45" fill="none" stroke="#175B88" stroke-width="1"/>
+  <circle cx="120" cy="130" r="20" fill="none" stroke="#2273AA" stroke-width="1.2"/>
+  <circle cx="120" cy="130" r="3" fill="#C2E200"/>
+
+  <!-- Radar Crosshairs -->
+  <line x1="20" y1="130" x2="220" y2="130" stroke="#0E334D" stroke-width="1" stroke-dasharray="2 3"/>
+  <line x1="120" y1="30" x2="120" y2="230" stroke="#0E334D" stroke-width="1" stroke-dasharray="2 3"/>
+  <line x1="53" y1="63" x2="187" y2="197" stroke="#0B263B" stroke-width="0.8"/>
+  <line x1="53" y1="197" x2="187" y2="63" stroke="#0B263B" stroke-width="0.8"/>
+
+  <!-- Rotating Radar Beam -->
+  <g class="radar-beam">
+    <path d="M120,130 L120,35 A95,95 0 0,1 187,63 Z" fill="url(#beamGrad)"/>
+    <line x1="120" y1="130" x2="120" y2="35" stroke="#00F5D4" stroke-width="2" opacity="0.85"/>
+  </g>
+
+  <!-- Legitimate Merchants (Quiet Green Nodes) -->
+  <circle cx="75" cy="110" r="3" fill="#10B981" opacity="0.7"/>
+  <circle cx="85" cy="165" r="2.5" fill="#10B981" opacity="0.6"/>
+  <circle cx="160" cy="155" r="3" fill="#10B981" opacity="0.7"/>
+  <circle cx="140" cy="70" r="2.5" fill="#10B981" opacity="0.6"/>
+
+  <!-- DETECTED SYNDICATE NODE (RED ALERT PULSE) -->
+  <circle cx="145" cy="105" r="4" fill="none" stroke="#EF4444" stroke-width="1.8" class="blip-ring"/>
+  <circle cx="145" cy="105" r="4.5" fill="#EF4444" filter="url(#blipGlow)" class="blip-pulse"/>
+  <circle cx="145" cy="105" r="2" fill="#FFFFFF"/>
+  <text x="156" y="103" fill="#EF4444" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.5">UNMASKED [M-1129]</text>
+  <text x="156" y="113" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="7.5">P(Betting) = 0.984</text>
+</g>
+
+<!-- Telemetry Stream Divider -->
+<line x1="235" y1="35" x2="235" y2="225" stroke="#1E293B" stroke-width="1.2"/>
+<line x1="235" y1="50" x2="235" y2="210" stroke="#00F5D4" stroke-width="1.5" class="stream-line" opacity="0.4"/>
+
+<!-- ======================================================== -->
+<!-- HEADER CONTENT (CENTER & RIGHT)                          -->
+<!-- ======================================================== -->
+
+<!-- Top Pill: Competition & Track -->
+<g transform="translate(255, 30)">
+  <rect width="400" height="24" rx="12" fill="url(#badgeGrad)" stroke="#1E4564" stroke-width="1"/>
+  <circle cx="14" cy="12" r="4" fill="#C2E200" class="status-dot"/>
+  <text x="26" y="16" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.8">
+    CSITM IIM BANGALORE × PAYU INNOVATION CHALLENGE
+  </text>
+  <rect x="340" y="4" width="52" height="16" rx="8" fill="#C2E200"/>
+  <text x="366" y="15.5" fill="#020813" font-family="system-ui, sans-serif" font-size="9" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    2026
+  </text>
+</g>
+
+<!-- Main Project Title -->
+<g transform="translate(255, 94)">
+  <text fill="url(#titleGrad)" font-family="system-ui, sans-serif" font-size="29" font-weight="900" letter-spacing="0.6">
+    UNMASKING THE SLEEPER SYNDICATE
+  </text>
+</g>
+
+<!-- Laser Accent Underline -->
+<g transform="translate(255, 104)">
+  <line x1="0" y1="0" x2="665" y2="0" stroke="url(#accentLineGrad)" stroke-width="1.8"/>
+  <circle cx="0" cy="0" r="3" fill="#C2E200" class="laser-scan"/>
+</g>
+
+<!-- Subtitle -->
+<g transform="translate(255, 128)">
+  <text fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12.5" font-weight="500">
+    Dual-Speed Longitudinal Machine Learning &amp; Bipartite Graph Intelligence
+  </text>
+  <text x="0" y="18" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" font-weight="400">
+    Unmasking post-onboarding camouflaged betting rings with zero friction for legitimate commerce
+  </text>
+</g>
+
+<!-- ======================================================== -->
+<!-- TELEMETRY KPI CHIPS (BOTTOM ROW)                         -->
+<!-- ======================================================== -->
+<g transform="translate(255, 182)">
+  <!-- Chip 1: Latency -->
+  <g transform="translate(0, 0)">
+    <rect width="155" height="48" rx="8" fill="#081726" stroke="#13354E" stroke-width="1"/>
+    <text x="12" y="20" fill="#64748B" font-family="system-ui, sans-serif" font-size="9" font-weight="700" letter-spacing="0.5">GATEWAY INFERENCE</text>
+    <text x="12" y="38" fill="#C2E200" font-family="system-ui, sans-serif" font-size="16" font-weight="900">4.6ms</text>
+    <text x="65" y="38" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">&lt;15ms SLA</text>
+  </g>
+
+  <!-- Chip 2: Precision@20 -->
+  <g transform="translate(165, 0)">
+    <rect width="155" height="48" rx="8" fill="#081726" stroke="#13354E" stroke-width="1"/>
+    <text x="12" y="20" fill="#64748B" font-family="system-ui, sans-serif" font-size="9" font-weight="700" letter-spacing="0.5">TOP-20 TRIAGE</text>
+    <text x="12" y="38" fill="#00F5D4" font-family="system-ui, sans-serif" font-size="16" font-weight="900">99.78%</text>
+    <text x="75" y="38" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Zero Fatigue</text>
+  </g>
+
+  <!-- Chip 3: False Positive Rate -->
+  <g transform="translate(330, 0)">
+    <rect width="155" height="48" rx="8" fill="#081726" stroke="#13354E" stroke-width="1"/>
+    <text x="12" y="20" fill="#64748B" font-family="system-ui, sans-serif" font-size="9" font-weight="700" letter-spacing="0.5">FALSE POSITIVE RATE</text>
+    <text x="12" y="38" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="16" font-weight="900">0.06%</text>
+    <text x="65" y="38" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">13 / 21.8K</text>
+  </g>
+
+  <!-- Chip 4: Loss Avoidance -->
+  <g transform="translate(495, 0)">
+    <rect width="168" height="48" rx="8" fill="#081726" stroke="#13354E" stroke-width="1"/>
+    <text x="12" y="20" fill="#64748B" font-family="system-ui, sans-serif" font-size="9" font-weight="700" letter-spacing="0.5">LOSS MINIMIZATION</text>
+    <text x="12" y="38" fill="#F43F5E" font-family="system-ui, sans-serif" font-size="16" font-weight="900">₹8.89M</text>
+    <text x="78" y="38" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Fine Avoidance</text>
+  </g>
+</g>
+
+</svg>
