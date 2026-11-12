@@ -1,0 +1,31 @@
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Large Data Files (>100MB GitHub limit)
+data/*.parquet
+data/transactions.parquet
+data_small/*.parquet
+
+# Scratch & Temporary Testing Scripts
+scratch/
+*.tmp
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp

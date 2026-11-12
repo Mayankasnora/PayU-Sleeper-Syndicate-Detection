@@ -1,0 +1,64 @@
+================================================================================
+PROPRIETARY EVALUATION & RESEARCH LICENSE
+CSITM IIM BANGALORE × PAYU INNOVATION CHALLENGE 2026
+================================================================================
+
+Copyright (c) 2026 Mayank Asnora
+Email: mayank.asnora_ugdsai2029@mastersunion.org
+Institution: Masters' Union
+All Rights Reserved.
+
+PROJECT TITLE:
+"The Bakery That Takes Bets: Dual-Speed Longitudinal Machine Learning & 
+Bipartite Graph Intelligence for Unmasking Camouflaged Merchant Betting Rings"
+
+--------------------------------------------------------------------------------
+1. GRANT OF EVALUATION LICENSE
+--------------------------------------------------------------------------------
+Permission is hereby granted to the designated evaluation jury, faculty, and 
+reviewers of the CSITM IIM Bangalore × PayU Innovation Challenge 2026 to access, 
+inspect, test, run, and evaluate this repository and all associated documentation, 
+source code, models, architectures, and presentations SOLELY for the purpose 
+of competition judging and academic scoring.
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS ON COMMERCIAL USE & PRODUCTION DEPLOYMENT
+--------------------------------------------------------------------------------
+This license strictly prohibits:
+a) Any commercial exploitation, production deployment, gateway integration, or 
+   adaptation of this code, feature store designs, or architecture by PayU, its 
+   parent company, affiliates, partners, or third parties without an explicit, 
+   separate, signed commercial agreement or IP acquisition contract with the author.
+b) Sublicensing, re-licensing, redistributing, selling, or publicly republishing 
+   this proprietary implementation or derivatives thereof under open-source 
+   terms (e.g., MIT, Apache, BSD) without prior written consent from the author.
+c) Extraction or reverse engineering of proprietary pipeline schemas, feature 
+   engineering pipelines, or custom heuristics for use in proprietary risk engines 
+   outside the authorized scope of evaluation.
+
+--------------------------------------------------------------------------------
+3. OWNERSHIP & INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+The author retains full, exclusive, and unencumbered ownership of all intellectual 
+property, patent rights, design rights, and copyrights embodied in this repository, 
+including but not limited to:
+- The multi-horizon longitudinal rolling window temporal feature architecture;
+- The bipartite entity resolution subgraph methodology;
+- The He et al. LightGBM + Logistic hybrid feature transformer risk pipeline;
+- The associated presentation deck and analytical reports.
+
+--------------------------------------------------------------------------------
+4. WARRANTY DISCLAIMER
+--------------------------------------------------------------------------------
+THIS CODEBASE AND PRESENTATION MATERIAL IS PROVIDED "AS IS", FOR ACADEMIC AND 
+COMPETITION EVALUATION PURPOSES ONLY, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR 
+OTHER LIABILITY ARISING FROM THE USE OR EVALUATION OF THIS WORK.
+
+================================================================================
+Author & Principal Investigator:
+Mayank Asnora
+Undergraduate - Data Science & AI (2029)
+Masters' Union
+Email: mayank.asnora_ugdsai2029@mastersunion.org
+================================================================================

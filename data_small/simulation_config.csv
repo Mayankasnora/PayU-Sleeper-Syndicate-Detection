@@ -1,0 +1,2 @@
+run_id,random_seed,params_json
+run_seed42,42,"{""seed"": 42, ""n_merchants"": 300, ""n_weeks"": 8, ""n_payers"": 100000, ""start_date"": ""2025-01-06"", ""fraud_rate"": 0.03, ""ring_share"": 0.7, ""sleeper_share"": 0.3, ""drift_week"": 30, ""label_rate"": 0.7, ""label_delay_weeks"": [4, 8], ""false_label_rate"": 0.01, ""n_franchise_groups"": 20, ""n_mall_groups"": 20}"
